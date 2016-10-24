@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html ng-app="routeApp">
+  <head>
+    <meta charset="utf-8">
+    <title>Angular Routes Solo</title>
+
+    <script src="vendors/angular.min.js" charset="utf-8"></script>
+    <script src="vendors/angular-route.min.js" charset="utf-8"></script>
+
+    <script src="scripts/app.module.js" charset="utf-8"></script>
+    <script src="scripts/app.config.js" charset="utf-8"></script>
+
+    <link rel="stylesheet" href="style/styles.css" />
+    <base href="/" />
+  </head>
+  <body>
+    <header><h1>The Wheel of Time</h1></header>
+      <img src="https://definitelynotforthebirds.files.wordpress.com/2013/02/wheel-of-time-use.jpg?w=300&h=168" />
+    <h3>Incomplete directory of characters from the Two Rivers</h3>
+    <ul>
+    <li><a href="/rand">Rand al-Thor</a></li>
+    <li><a href="/mat">Matrim Cauthon</a></li>
+    <li><a href="/perrin">Perrin Aybara</a></li>
+    <img class="character" src="http://i.imgur.com/6MUKXYI.jpg" />
+  </ul>
+    <ng-view>
+
+    </ng-view>
+    <footer>
+
+      <p>© Copyright 2016, SomeoneElsePublishing</p>
+
+  </footer>
+  </body>
+</html>
